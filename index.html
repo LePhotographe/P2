@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Booki</title>
+</head>
+<body>
+    <header>
+<!--Menu-->
+    <nav>
+        <img class="nav-logo-mobile" src="images/logo/Booki@3x.png" alt="logo-mobile">
+        <img class="nav-logo-desktop" src="images/logo/Booki.png" alt="Logo">
+        <ul class="menu">
+            <a class="nav-hebergements" href="#hebergements"><li>Hébergements</li></a>
+            <a class="nav-activites" href="#activites"><li>Activités</li></a>
+        </ul>
+    </nav>
+    </header>
+<!--bloc de titre & barre de recherche-->
+<main>
+    <section class="section1">
+        <h2 class="Titre-top">Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p class="description-top">En plein centre ville ou en pleine nature</p>
+        <div class="searchbox">
+            <p class="marker"><i class="fa fa-map-marker-alt fa-lg" aria-hidden="true"></i></p>
+            <input class="placeholder" type="search" placeholder="Marseille, France">
+            <button class="rechercher-desktop">Rechercher</button>
+            <button class="rechercher-mobile"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+<!--Flitres de recherche-->
+        <div class="bar-filtres">
+            <h4 class="filtres">Filtres</h4>
+        <div class="economique">
+            <p class="bill"><i class="fas fa-money-bill-wave"></i></p>
+            <h4 class="f-economique">Economique</h4>
+        </div>
+        <div class="familial">
+            <p class="fam"><i class="fas fa-child fa-lg"></i></p>
+            <h4 class="f-familial">Familial</h4>
+        </div>
+        <div class="romantique">
+            <p class="rom"><i class="fas fa-heart"></i></p>
+            <h4 class="f-romantique">Romantique</h4>
+        </div>
+        <div class="animaux">
+            <p class="ani"><i class="fas fa-dog"></i></p>
+            <h4 class="f-animaux">Animaux autorisés</h4>
+        </div>
+
+        </div>
+        <div class="info">
+            <p class="point-info"><i class="fas fa-info fa-xs"></i></p>
+            <p class="description">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </section>
+<!--Début de résultats de recherche-->
+    <section class="section2">
+            <div class="gauche" id="hebergements">
+                <h2 class="titre">Hébergements à Marseille</h2>
+                <div class="grille">
+                    <!--1-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebiere"></div>
+                        <div class="card-text">
+                        <h4 class="card-title">Auberge la cannebiere</h4>
+                        <p class="card-tarif">Nuit à partir de <strong>25€</strong></p>
+                        <p class="card-stars">
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                    <!--2-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port"></div>
+                        <div class="card-text">
+                        <h4 class="card-title">Hôtel du port</h4>
+                        <p class="card-tarif">Nuit à partir de <strong>52€</strong></p>
+                        <p class="card-stars">
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                    <!--3-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes"></div>
+                        <div class="card-text">
+                            <h4 class="card-title">Hôtel les mouettes</h4>
+                            <p class="card-tarif">Nuit à partir de <strong>76€</strong></p>
+                            <p class="card-stars">
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                    <!--4-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer"></div>
+                        <div class="card-text">
+                            <h4 class="card-title">Hôtel de la mer</h4>
+                            <p class="card-tarif">Nuit à partir de <strong>46€</strong></p>
+                            <p class="card-stars">
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                    <!--5-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"></div>
+                        <div class="card-text">
+                            <h4 class="card-title">Auberge le panier</h4>
+                            <p class="card-tarif">Nuit à partir de <strong>23€</strong></p>
+                            <p class="card-stars">
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                    <!--6-->
+                    <div class="card"> <!--Structure d'une carte-->
+                        <a href="#">
+                        <div class="card-image"><img class="image-card" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina"></div>
+                        <div class="card-text">
+                            <h4 class="card-title">Hôtel chez Amina</h4>
+                            <p class="card-tarif">Nuit à partir de <strong>96€</strong></p>
+                            <p class="card-stars">
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i></p>
+                        </div>
+                        </a>
+                    </div> <!--Fin de la structure de la carte-->
+                </div>
+                <h4 class="more">Afficher plus</h4>
+            </div>
+            <div class="droite">
+                <div class="titre-top">
+                    <h2 class="titre">Les plus populaires</h2>
+                    <p><i class="fas fa-chart-line    "></i></p>
+                </div>
+                <div class="column-right">
+                <!--1-->
+                <div class="card"> <!--Structure d'une carte-->
+                    <a href="#">
+                    <div class="card-image">
+                        <img class="image-card" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="description">
+                    </div>
+                    <div class="card-text">
+                        <h4 class="card-title">Hôtel le soleil du matin</h4>
+                        <p class="card-tarif">Nuit à partir de <strong>128€</strong></p>
+                        <div class="etoiles">
+                        <p class="card-stars">
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                            <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i></p>
+                        </div>
+                    </div>
+                    </a>
+                </div> <!--Fin de la structure de la carte-->
+                <!--2-->
+                <div class="card"> <!--Structure d'une carte-->
+                    <a href="#">
+                    <div class="card-image"><img class="image-card" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="description"></div>
+                    <div class="card-text">
+                    <h4 class="card-title">Au coeur de l'eau Chambres d'hôtes</h4>
+                    <p class="card-tarif">Nuit à partir de <strong>71€</strong></p>
+                    <div class="etoiles">
+                    <p class="card-stars">
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                    </div>
+                    </div>
+                    </a>
+                </div> <!--Fin de la structure de la carte-->
+                <!--3-->
+                <div class="card"> <!--Structure d'une carte-->
+                    <a href="#">
+                    <div class="card-image"><img class="image-card" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="description"></div>
+                    <div class="card-text">
+                    <h4 class="card-title">Hôtel tout bleu et blanc</h4>
+                    <p class="card-tarif">Nuit à partir de <strong>68€</strong></p>
+                    <p class="card-stars">
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #0065FC ;"></i>
+                        <i class="fa fa-star fa-xs" aria-hidden="true" style="color: #deebff ;"></i></p>
+                    </div>
+                    </a>
+                </div> <!--Fin de la structure de la carte-->
+            </div>
+            </div>
+        </section>
+<!--Fin des résultats-->
+    <section class="section3" id="activites">
+        <h2 class="titre-top">Activités à Marseille</h2>
+    <div class="container">
+        <div class="container-column">
+        <!--1-->
+        <div class="card1"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port de Marseille"></div>
+            <div class="card-text">
+            <h4 class="card-title">Vieux port</h4>
+            </div>
+            </a>
+            </div>
+        </div> <!--Fin de la structure de la carte-->
+        <!--2-->
+        <div class="container-column">
+        <div class="card2"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pommergue"></div>
+            <div class="card-text">
+            <h4 class="card-title">Fort de Pommèrgue</h4>
+            </div>
+            </a>
+        </div> <!--Fin de la structure de la carte-->
+        <!--3 A MODIFIER-->
+        <div class="card3"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du frioul"></div>
+            <div class="card-text">
+            <h4 class="card-title">Îles du Frioul</h4>
+            </div>
+            </a>
+        </div> <!--Fin de la structure de la carte-->
+    </div>
+        <!--4 A MODIFIER-->
+        <div class="container-column">
+        <div class="card1"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="description"></div>
+            <div class="card-text">
+            <h4 class="card-title">Parc National des Calanques</h4>
+            </div>
+            </a>
+        </div>
+        </div> <!--Fin de la structure de la carte-->
+        <div class="container-column">
+        <!--5-->
+        <div class="card3"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre dame de la garde"></div>
+            <div class="card-text">
+            <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
+            </div>
+            </a>
+        </div> <!--Fin de la structure de la carte-->
+        <div class="card2"> <!--Structure d'une carte verticale-->
+            <a href="#">
+            <div class="card-image">
+                <img class="image-card" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp Marseille"></div>
+            <div class="card-text">
+            <h4 class="card-title">Parc Longchamp</h4>
+            </div>
+            </a>
+        </div> <!--Fin de la structure de la carte-->
+        </div>
+        
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="column">
+            <h3 class="titre-footer">A Propos</h3>
+            <a href="#"><p class="liens-footer">Fonctionnement du site</p></a>
+            <a href="#"><p class="liens-footer">Conditions générales de vente</p></a>
+            <a href="#"><p class="liens-footer">Données et confidentialité</p></a>
+        </div>
+        <div class="column">
+            <h3 class="titre-footer">Nos Hébergements</h3>
+            <a href="#"><p class="liens-footer">Charte qualité</p></a>
+            <a href="#"><p class="liens-footer">Soumettre votre hôtel</p></a>
+        </div>
+        <div class="column">
+            <h3 class="titre-footer">Assistance</h3>
+            <a href="#"><p class="liens-footer">Centre d'aide</p></a>
+            <a href="#"><p class="liens-footer">Nous contacter</p></a>
+        </div>
+    </footer>
+</body>
+</html>
