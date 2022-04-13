@@ -589,7 +589,7 @@ footer a:hover {
   color: var(--couleur1);
 }
 
-@media screen and (min-width: 992.01px) {
+@media screen and (min-width: 993px) {
   .nav-logo:hover {
     cursor: pointer;
   }
@@ -693,6 +693,90 @@ footer a:hover {
   .section2 .gauche {
     background-color: white;
   }
+  /*hover tablette*/
+  .nav-hebergements:hover {
+    padding: 45px;
+    border-top: 7px solid var(--couleur1);
+    color: var(--couleur1);
+  }
+
+  .nav-activites:hover {
+    padding: 45px;
+    border-top: 8px solid var(--couleur1);
+    color: var(--couleur1);
+  }
+
+  .placeholder:focus {
+    width: 300px;
+  }
+
+  input:focus::placeholder {
+    opacity: 0;
+  }
+
+  .searchbox .rechercher-desktop:hover {
+    background-color: var(--couleur2);
+    border-top: 2px solid var(--couleur2);
+    border-bottom: 3px solid var(--couleur2);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .economique:hover {
+    transform: scale(1.05);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .familial:hover {
+    transform: scale(1.05);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .romantique:hover {
+    transform: scale(1.05);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .animaux:hover {
+    transform: scale(1.1);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .gauche .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .more:hover {
+    color: var(--couleur1);
+  }
+
+  .droite .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card3:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* Fin de la partie tablette*/
@@ -745,16 +829,22 @@ footer a:hover {
   }
 
   nav .nav-hebergements {
+    border-top: 0px;
     border-bottom: 4px solid var(--couleur3);
   }
   nav .nav-hebergements:hover {
+    padding: 15px 0px;
+    border-top: 0px;
     color: var(--couleur1);
     border-bottom: 4px solid var(--couleur1);
   }
   nav .nav-activites {
+    border-top: 0px;
     border-bottom: 4px solid var(--couleur3);
   }
   nav .nav-activites:hover {
+    padding: 15px 0px;
+    border-top: 0px;
     color: var(--couleur1);
     border-bottom: 4px solid var(--couleur1);
   }
@@ -961,6 +1051,62 @@ footer a:hover {
   }
   footer .liens-footer {
     margin-bottom: 15px;
+  }
+
+  /*hover mobile*/
+  .searchbox .rechercher-mobile:hover {
+    background-color: var(--couleur2);
+    border-top: 2px solid var(--couleur2);
+    border-bottom: 3px solid var(--couleur2);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .economique:hover {
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .familial:hover {
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .romantique:hover {
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .animaux:hover {
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .gauche .card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .more:hover {
+    color: var(--couleur1);
+  }
+
+  .droite .card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card1:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card2:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card3:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   /*fin de la partie mobile*/
 }
