@@ -135,23 +135,11 @@ li {
 .rechercher-mobile {
   display: none;
 }
-.searchbox .rechercher-desktop {
-  margin: 0px;
-  padding: 15px 20px;
-  border-radius: 0px 15px 15px 0px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-top: 2px solid var(--couleur1);
-  border-bottom: 3px solid var(--couleur1);
-  background-color: var(--couleur1);
-  color: white;
-  transition: 0.3s ease;
-}
-
+.searchbox .rechercher-desktop,
 .rechercher-mobile {
   margin: 0px;
   padding: 15px 20px;
+  border-radius: 0px 15px 15px 0px;
   font-size: 1rem;
   font-weight: bold;
   border: none;
@@ -801,8 +789,7 @@ footer a:hover {
   }
 
   .searchbox .placeholder {
-    padding: 15px 20px;
-    padding-right: 0px;
+    width: 65%;
   }
 
   .rechercher-desktop {
