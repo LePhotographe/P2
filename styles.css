@@ -1,0 +1,964 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --couleur1: #0065fc;
+  --couleur2: #deebff;
+  --couleur3: #f2f2f2;
+  --couleur4: rgba(217, 217, 217, 1);
+  --padding1: 0px 40px;
+  --marge-bas: 30px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  max-width: 1500px;
+  min-width: 350px;
+  margin: auto;
+}
+strong {
+  font-weight: 600;
+}
+
+/*barre de navigation*/
+
+.nav-logo-mobile {
+  display: none;
+}
+
+nav {
+  height: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-desktop {
+  width: 225px;
+  padding: 0px 60px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  margin: 0px;
+  padding: var(--padding1);
+  list-style-type: none;
+}
+
+li {
+  font-size: medium;
+  justify-content: center;
+}
+
+.menu a {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  transition: 0.1s ease;
+}
+
+/* Changer la couleur et ajouter la barre au survol*/
+.nav-hebergements {
+  padding: 45px;
+  border-top: 7px solid white;
+}
+
+.nav-activites {
+  padding: 45px;
+  border-top: 8px solid white;
+}
+/* fin */
+
+.section1 {
+  padding-left: 40px;
+}
+
+.Titre-top {
+  margin: 0px;
+  margin-bottom: 0.5rem;
+}
+
+.description-top {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+/*fin de barre de navigation*/
+
+/*barre de recherche*/
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--marge-bas);
+}
+
+.marker {
+  margin: 0px;
+  padding: 15px 20px;
+  background-color: var(--couleur3);
+  font-size: 1rem;
+  border-radius: 15px 0px 0px 15px;
+  border-top: 2px solid var(--couleur3);
+  border-bottom: 3px solid var(--couleur3);
+}
+
+.searchbox .placeholder {
+  width: 225px;
+  border-style: none;
+  margin: 0px;
+  padding: 15px 20px;
+  font-weight: 700;
+  border-top: 2px solid var(--couleur3);
+  border-bottom: 2px solid var(--couleur3);
+  transition: width 0.3s ease-in-out;
+}
+
+.rechercher-mobile {
+  display: none;
+}
+.searchbox .rechercher-desktop,
+.rechercher-mobile {
+  margin: 0px;
+  padding: 15px 20px;
+  border-radius: 0px 15px 15px 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-top: 2px solid var(--couleur1);
+  border-bottom: 3px solid var(--couleur1);
+  background-color: var(--couleur1);
+  color: white;
+  transition: 0.3s ease;
+}
+
+/*fin de la barre de recherche*/
+
+/*Filtres*/
+.bar-filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.filtres {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-right: 25px;
+  border: 3px solid white;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.economique {
+  height: 50px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.f-economique {
+  padding: 15px 30px;
+  margin-left: -30px;
+  padding-left: 60px;
+  padding-right: 25px;
+  border: 3px solid var(--couleur4);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.familial {
+  height: 50px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.f-familial {
+  padding: 15px 30px;
+  margin-left: -30px;
+  padding-left: 60px;
+  padding-right: 25px;
+  border: 3px solid var(--couleur4);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.romantique {
+  height: 50px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.f-romantique {
+  padding: 15px 30px;
+  margin-left: -30px;
+  padding-left: 60px;
+  padding-right: 25px;
+  border: 3px solid var(--couleur4);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.animaux {
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.f-animaux {
+  padding: 15px 30px;
+  margin-left: -30px;
+  padding-left: 60px;
+  padding-right: 25px;
+  border: 3px solid var(--couleur4);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.bar-filtres i {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+  width: 53px;
+  background-color: var(--couleur2);
+  color: var(--couleur1);
+  border-radius: 27px;
+  margin-right: -23px;
+}
+
+/* fin de la barre des filtres*/
+
+/* point d'info*/
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  margin-bottom: var(--marge-bas);
+}
+
+.point-info {
+  font-size: 1rem;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  border-radius: 100px;
+  background-color: white;
+  color: var(--couleur1);
+  border: 1px solid var(--couleur3);
+}
+
+.info .description {
+  padding-left: 0.5rem;
+}
+/* Fin de la partie info*/
+
+/* Fin du 1er element main*/
+
+/* Début de la section images */
+
+.section2 {
+  margin: 0px;
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  column-gap: 25px;
+  margin-bottom: 60px;
+}
+
+.section2 .gauche {
+  padding: 40px;
+  background-color: var(--couleur3);
+  border-radius: 20px;
+}
+
+.gauche .titre {
+  padding-bottom: 25px;
+  font-weight: 600;
+}
+
+.section2 .droite {
+  margin: 0px;
+  padding: 40px 25px 15px 25px;
+  background-color: var(--couleur3);
+  border-radius: 20px;
+}
+
+.droite .titre-top {
+  margin-bottom: var(--marge-bas);
+}
+
+/* début des cartes dans la section gauche*/
+
+.grille {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.gauche .card {
+  height: auto;
+  width: 220px;
+  flex-grow: 1;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  transition: 0.1s ease;
+}
+
+.gauche a {
+  text-decoration: none;
+  color: black;
+}
+
+.gauche .card-image {
+  height: 130px;
+}
+
+.gauche .image-card {
+  width: 100%;
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.gauche .card-title {
+  margin-bottom: 5px;
+}
+.gauche .card-tarif {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.gauche .card-text {
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.card-stars {
+  display: flex;
+}
+
+.more {
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+/*Section "les plus populaires"*/
+
+.droite .titre {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.droite .titre-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  margin-bottom: 0px;
+}
+
+.droite .titre-top i {
+  font-size: 27.6px;
+}
+.droite .column-right {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.droite .card {
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 5px;
+  padding-right: 10px;
+  overflow: hidden;
+  transition: 0.1s ease;
+}
+
+.droite .image-card {
+  height: 140px;
+  width: 120px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.droite .card-text {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.droite a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.droite .card-tarif {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/*Début de la section 3 "activités"*/
+
+.section3 {
+  width: auto;
+  padding-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.section3 .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  min-height: 400px;
+}
+
+.section3 .titre-top {
+  font-weight: 600;
+  margin-bottom: var(--marge-bas);
+}
+
+.section3 a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.section3 .card1 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 1;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.1s ease;
+}
+
+.section3 .card1 .image-card {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+/*
+.section3 .card1 .card-image {
+  height: 325px;
+}
+*/
+.section3 .card-text {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section3 .card-title {
+  padding-left: 20px;
+}
+
+.section3 .card2 {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.1s ease;
+}
+
+.section3 .card2 .image-card {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.section3 .container-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+}
+
+.section3 .card3 {
+  display: flex;
+  height: 175px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.1s ease;
+}
+
+.section3 .card3 .image-card {
+  object-fit: cover;
+  width: 100%;
+  height: 125px;
+}
+
+footer {
+  display: flex;
+  height: auto;
+  background-color: var(--couleur3);
+  padding: 40px;
+  padding-right: 0px;
+}
+
+footer .column {
+  width: 30%;
+  margin-right: auto;
+}
+.titre-footer {
+  margin-bottom: 30px;
+}
+
+.liens-footer {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  transition: 0, 1s ease;
+}
+
+footer a:hover {
+  color: var(--couleur1);
+}
+
+@media screen and (min-width: 992.01px) {
+  .nav-logo:hover {
+    cursor: pointer;
+  }
+
+  .nav-hebergements:hover {
+    padding: 45px;
+    border-top: 7px solid var(--couleur1);
+    color: var(--couleur1);
+  }
+
+  .nav-activites:hover {
+    padding: 45px;
+    border-top: 8px solid var(--couleur1);
+    color: var(--couleur1);
+  }
+
+  .placeholder:focus {
+    width: 300px;
+  }
+
+  input:focus::placeholder {
+    opacity: 0;
+  }
+
+  .searchbox .rechercher-desktop:hover {
+    background-color: var(--couleur2);
+    border-top: 2px solid var(--couleur2);
+    border-bottom: 3px solid var(--couleur2);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .economique:hover {
+    transform: scale(1.1);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .familial:hover {
+    transform: scale(1.1);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .romantique:hover {
+    transform: scale(1.1);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .animaux:hover {
+    transform: scale(1.1);
+    color: var(--couleur1);
+    cursor: pointer;
+  }
+
+  .gauche .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .more:hover {
+    color: var(--couleur1);
+  }
+
+  .droite .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card3:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+/* Fin de la partie desktop*/
+
+/*Partie tablette*/
+
+@media screen and (max-width: 992px) {
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section2 .droite .card {
+    margin-bottom: 15px;
+  }
+  .section2 .gauche {
+    background-color: white;
+  }
+}
+
+/* Fin de la partie tablette*/
+
+/* Partie Mobile*/
+
+@media screen and (max-width: 768px) {
+  /*header : menu et navigation*/
+  header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .nav-logo-mobile {
+    display: block;
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .nav-logo-desktop {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+    margin-bottom: var(--padding1);
+  }
+  nav .menu {
+    width: 100%;
+    display: flex;
+  }
+
+  nav ul {
+    padding: 0px;
+    height: auto;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  nav a {
+    width: 50%;
+  }
+  nav .nav-activites,
+  .nav-hebergements {
+    padding: 15px 0px;
+  }
+
+  nav .nav-hebergements {
+    border-bottom: 4px solid var(--couleur3);
+  }
+  nav .nav-hebergements:hover {
+    color: var(--couleur1);
+    border-bottom: 4px solid var(--couleur1);
+  }
+  nav .nav-activites {
+    border-bottom: 4px solid var(--couleur3);
+  }
+  nav .nav-activites:hover {
+    color: var(--couleur1);
+    border-bottom: 4px solid var(--couleur1);
+  }
+
+  /*fin de header*/
+
+  /*block de navigation & recherche*/
+
+  .section1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+  }
+
+  .section1 .Titre-top,
+  .description-top {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section1 .titre-top {
+    margin-top: 5%;
+  }
+  .description-top {
+    margin-bottom: 5%;
+  }
+
+  .searchbox {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+  .searchbox .placeholder {
+    padding: 15px 20px;
+    padding-right: 0px;
+  }
+
+  .rechercher-desktop {
+    display: none;
+  }
+
+  .rechercher-mobile {
+    display: block;
+    margin: 0px;
+    margin-left: -15px;
+    padding: 15px 20px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-top: 2px solid var(--couleur1);
+    border-bottom: 3px solid var(--couleur1);
+    background-color: var(--couleur1);
+    color: white;
+    transition: 0.1s ease-in;
+  }
+  /* fin du block de navigation & recherhe*/
+
+  /*barre des filtres*/
+
+  .bar-filtres {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .bar-filtres .filtres {
+    padding-right: 100%;
+    margin-bottom: 5px;
+  }
+
+  .economique,
+  .familial,
+  .romantique,
+  .animaux {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .f-economique,
+  .f-familial,
+  .f-romantique,
+  .f-animaux {
+    font-weight: 700;
+    padding-left: 58px;
+    padding-right: 14px;
+  }
+  /*fin de la barre de filtre mobile*/
+
+  /*section 2 : disposition en colonnes et passage de "droite" en 1er*/
+  /*fin de la partie Les plus populaires*/
+
+  .section2 {
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .section2 .droite {
+    border-radius: 0px;
+    padding: 40px 5% 10px 5%;
+  }
+
+  .section2 .droite .titre-top {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .section2 .droite i {
+    font-size: large;
+    margin-top: 3px;
+  }
+
+  .section2 .droite .card {
+    margin-bottom: 15px;
+  }
+  .section2 .droite .card .card-text {
+    margin: 10px 20px;
+  }
+  .section2 .droite .card i {
+    font-size: small;
+  }
+  /*fin de la partie Les plus populaires*/
+
+  /*partie Hebergements*/
+
+  .section2 .gauche {
+    background-color: white;
+    padding: 40px 5% 10px 5%;
+  }
+
+  .section2 .gauche .titre {
+    font-size: 20px;
+  }
+
+  .section2 .gauche .card {
+    width: 90%;
+    margin-bottom: -25px;
+  }
+
+  .section2 .gauche .more {
+    padding-top: 15px;
+  }
+  /*fin de la partie hebergements*/
+
+  /*Partie activités*/
+
+  .section3 {
+    margin: 0px;
+    padding: 40px 5% 10px 5%;
+    gap: 0px;
+  }
+
+  .section3 .container {
+    display: block;
+    padding: 0px 3%;
+  }
+
+  .section3 .container-column {
+    width: 100%;
+    gap: 0px;
+  }
+
+  .section3 .titre-top {
+    padding-left: 5%;
+  }
+
+  .section3 .card1 {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .section3 .card2 {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .section3 .card3 {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .section3 .card-image {
+    height: 150px;
+  }
+  .section3 .card1 .image-card {
+    height: 150px;
+  }
+  .section3 .card2 .image-card {
+    height: 150px;
+  }
+  .section3 .card3 .image-card {
+    height: 150px;
+  }
+  /*Footer*/
+
+  footer {
+    padding: 20px 40px;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .column {
+    width: 100%;
+  }
+
+  footer .titre-footer {
+    padding-top: 15px;
+  }
+  footer .liens-footer {
+    margin-bottom: 15px;
+  }
+  /*fin de la partie mobile*/
+}
