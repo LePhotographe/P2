@@ -184,6 +184,7 @@ li {
   border: 3px solid var(--couleur4);
   border-radius: 50px;
   z-index: -1;
+  transition: 0.2s ease;
 }
 
 .familial {
@@ -203,6 +204,7 @@ li {
   border: 3px solid var(--couleur4);
   border-radius: 50px;
   z-index: -1;
+  transition: 0.2s ease;
 }
 
 .romantique {
@@ -222,6 +224,7 @@ li {
   border: 3px solid var(--couleur4);
   border-radius: 50px;
   z-index: -1;
+  transition: 0.2s ease;
 }
 
 .animaux {
@@ -241,6 +244,7 @@ li {
   border: 3px solid var(--couleur4);
   border-radius: 50px;
   z-index: -1;
+  transition: 0.2s ease;
 }
 
 .bar-filtres i {
@@ -313,7 +317,7 @@ li {
 
 .section2 .droite {
   margin: 0px;
-  padding: 40px 25px 15px 25px;
+  padding: 40px 40px 0px 40px;
   background-color: var(--couleur3);
   border-radius: 20px;
 }
@@ -409,25 +413,24 @@ li {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
 }
 
 .droite .card {
-  height: 150px;
+  height: 140px;
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 5px;
-  padding-right: 10px;
   overflow: hidden;
   transition: 0.1s ease;
 }
 
 .droite .image-card {
-  height: 140px;
+  height: 130px;
   width: 120px;
   object-fit: cover;
   border-top-left-radius: 15px;
@@ -435,9 +438,7 @@ li {
 }
 
 .droite .card-text {
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -628,10 +629,18 @@ footer a:hover {
     cursor: pointer;
   }
 
+  .f-economique:hover {
+    border: 3px solid var(--couleur2);
+  }
+
   .familial:hover {
     transform: scale(1.1);
     color: var(--couleur1);
     cursor: pointer;
+  }
+
+  .f-familial:hover {
+    border: 3px solid var(--couleur2);
   }
 
   .romantique:hover {
@@ -640,10 +649,18 @@ footer a:hover {
     cursor: pointer;
   }
 
+  .f-romantique:hover {
+    border: 3px solid var(--couleur2);
+  }
+
   .animaux:hover {
     transform: scale(1.1);
     color: var(--couleur1);
     cursor: pointer;
+  }
+
+  .f-animaux:hover {
+    border: 3px solid var(--couleur2);
   }
 
   .gauche .card:hover {
@@ -755,9 +772,17 @@ footer a:hover {
     color: var(--couleur1);
   }
 
+  .droite .card-text {
+    margin-left: 30px;
+  }
+
   .droite .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section2 .gauche {
+    padding-bottom: 0px;
   }
 
   .section3 .card1:hover {
@@ -776,6 +801,14 @@ footer a:hover {
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .section3 .card-title {
+    padding-left: 10px;
+  }
+
+  .section3 .card-text {
+    margin: 0px 5px;
   }
 }
 
