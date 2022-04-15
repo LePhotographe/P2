@@ -35,6 +35,9 @@ body {
 strong {
   font-weight: 600;
 }
+h4 {
+  font-size: 14px;
+}
 
 /*barre de navigation*/
 
@@ -55,7 +58,7 @@ nav {
   padding: 0px 60px;
 }
 
-ul {
+.menu {
   display: flex;
   align-items: center;
   height: 110px;
@@ -64,13 +67,8 @@ ul {
   list-style-type: none;
 }
 
-li {
-  font-size: medium;
-  justify-content: center;
-}
-
 .menu a {
-  font-size: large;
+  font-size: medium;
   text-decoration: none;
   color: black;
   transition: 0.1s ease;
@@ -299,8 +297,8 @@ li {
   margin: 0px;
   padding: 0px 40px;
   display: grid;
-  grid-template-columns: 5fr 2fr;
-  column-gap: 25px;
+  grid-template-columns: 10fr 4fr;
+  column-gap: 40px;
   margin-bottom: 60px;
 }
 
@@ -354,12 +352,12 @@ li {
 }
 
 .gauche .card-image {
-  height: 130px;
+  height: 120px;
 }
 
 .gauche .image-card {
   width: 100%;
-  height: 120px;
+  height: 110px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
@@ -370,7 +368,7 @@ li {
   margin-bottom: 5px;
 }
 .gauche .card-tarif {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 200;
   margin-bottom: 5px;
 }
@@ -419,7 +417,7 @@ li {
 }
 
 .droite .card {
-  height: 140px;
+  height: 150px;
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -430,7 +428,7 @@ li {
 }
 
 .droite .image-card {
-  height: 130px;
+  height: 140px;
   width: 120px;
   object-fit: cover;
   border-top-left-radius: 15px;
@@ -441,7 +439,6 @@ li {
   margin: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .droite a {
@@ -451,8 +448,16 @@ li {
 }
 
 .droite .card-tarif {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 200;
+}
+
+.droite .card-stars {
+  position: absolute;
+  margin-top: 100px;
+}
+.droite .card-stars .debordement {
+  margin-top: 90px;
 }
 
 /*Début de la section 3 "activités"*/
@@ -772,6 +777,14 @@ footer a:hover {
     color: var(--couleur1);
   }
 
+  .droite .card {
+    height: 130px;
+  }
+
+  .droite .image-card {
+    height: 120px;
+  }
+
   .droite .card-text {
     margin-left: 30px;
   }
@@ -810,6 +823,11 @@ footer a:hover {
   .section3 .card-text {
     margin: 0px 5px;
   }
+
+  .droite .card-stars {
+    position: static;
+    margin-top: 50px;
+  }
 }
 
 /* Fin de la partie tablette*/
@@ -844,17 +862,14 @@ footer a:hover {
     display: flex;
   }
 
-  nav ul {
+  .menu {
     padding: 0px;
     height: auto;
   }
 
-  nav li {
-    text-align: center;
-  }
-
   nav a {
     width: 50%;
+    text-align: center;
   }
   nav .nav-activites,
   .nav-hebergements {
