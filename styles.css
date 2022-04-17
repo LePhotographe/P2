@@ -443,6 +443,10 @@ nav {
   margin: 15px;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .droite a {
@@ -456,10 +460,6 @@ nav {
   font-weight: 200;
 }
 
-.droite .card-stars {
-  position: absolute;
-  margin-top: 100px;
-}
 .droite .card-stars .debordement {
   margin-top: 90px;
 }
@@ -592,7 +592,7 @@ footer .column {
 footer a {
   color: black;
   text-decoration: none;
-  transition: 0, 1s ease;
+  transition: 0.1s ease;
 }
 
 footer a:hover {
@@ -793,6 +793,15 @@ footer a:hover {
     margin-left: 30px;
   }
 
+  .droite .card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
   .droite .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -826,11 +835,6 @@ footer a:hover {
 
   .section3 .card-text {
     margin: 0px 5px;
-  }
-
-  .droite .card-stars {
-    position: static;
-    margin-top: 50px;
   }
 }
 
@@ -1017,6 +1021,16 @@ footer a:hover {
   .section2 .droite .card i {
     font-size: small;
   }
+
+  .droite .card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
   /*fin de la partie Les plus populaires*/
 
   /*partie Hebergements*/
