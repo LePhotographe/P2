@@ -716,6 +716,10 @@ footer a:hover {
   .section2 .droite .card {
     margin-bottom: 15px;
   }
+
+  .section2 .droite {
+    padding-bottom: 40px;
+  }
   .section2 .gauche {
     background-color: white;
   }
